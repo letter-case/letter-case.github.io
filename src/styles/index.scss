@@ -1,7 +1,41 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
 
+$step: .5rem;
+$mainBackgroung: #ebe8db;
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: "Comfortaa", cursive;
+}
+
+html,
+body {
+	background-color: $mainBackgroung;
+	height: 100%;
+}
+
+#root,
+.app {
+	height: 100%;
+}
+
+.app {
+	display: flex;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: $step * 2;
+}
+
+.actions {
+	button {
+		font-size: 1rem;
+		padding: .5rem;
+		cursor: pointer;
+	}
 }
